@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "listing": {
+      "title": "Roommate Listing",
+      "description": "A rental listing for a room available or someone looking for a room",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "role": { "type": "string" },
+        "name": { "type": "string" },
+        "gender": { "type": "string" },
+        "age": { "type": "number" },
+        "occupation": { "type": "string" },
+        "city": { "type": "string" },
+        "location": { "type": "string" },
+        "exactLocation": { "type": "string" },
+        "budget": { "type": "number" },
+        "houseType": { "type": "string" },
+        "roomsCount": { "type": "number" },
+        "phone": { "type": "string" },
+        "telegram": { "type": "string" },
+        "description": { "type": "string" },
+        "lifestyle": { "type": "array" },
+        "roomAmenities": { "type": "array" },
+        "postedAt": { "type": "string" },
+        "createdAt": { "type": "number" },
+        "isSample": { "type": "boolean" },
+        "userId": { "type": "string" }
+      },
+      "required": ["role", "name", "city", "location", "budget", "phone", "description"]
+    }
+  },
+  "firestore": {
+    "/listings/{listingId}": {
+      "schema": "listing",
+      "description": "Public listings for roommates and rooms"
+    }
+  }
+}

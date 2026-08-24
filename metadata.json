@@ -1,0 +1,6 @@
+{
+  "name": "የቤት ኪራይ ተባባሪ",
+  "description": "የሚፈልጉትን የቤት ኪራይ ተባባሪ በቀላሉ እና በፍጥነት ለማግኘት የሚረዳ አገልግሎት",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
